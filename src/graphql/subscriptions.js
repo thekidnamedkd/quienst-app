@@ -5,11 +5,11 @@ export const onCreateAmigos = /* GraphQL */ `
   subscription OnCreateAmigos {
     onCreateAmigos {
       id
-      name
-      age
-      description
-      location
-      job
+      nombre
+      edad
+      paradero
+      trabajo
+      descripcion
       createdAt
       updatedAt
     }
@@ -19,11 +19,11 @@ export const onUpdateAmigos = /* GraphQL */ `
   subscription OnUpdateAmigos {
     onUpdateAmigos {
       id
-      name
-      age
-      description
-      location
-      job
+      nombre
+      edad
+      paradero
+      trabajo
+      descripcion
       createdAt
       updatedAt
     }
@@ -33,11 +33,11 @@ export const onDeleteAmigos = /* GraphQL */ `
   subscription OnDeleteAmigos {
     onDeleteAmigos {
       id
-      name
-      age
-      description
-      location
-      job
+      nombre
+      edad
+      paradero
+      trabajo
+      descripcion
       createdAt
       updatedAt
     }

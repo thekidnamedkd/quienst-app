@@ -1,52 +1,52 @@
 /* eslint-disable */
 // this is an auto generated file. This will be overwritten
 
-export const createAmigos = /* GraphQL */ `
+export const createAmigo = /* GraphQL */ `
   mutation CreateAmigos(
     $input: CreateAmigosInput!
     $condition: ModelAmigosConditionInput
   ) {
     createAmigos(input: $input, condition: $condition) {
       id
-      name
-      age
-      description
-      location
-      job
+      nombre
+      edad
+      paradero
+      trabajo
+      descripcion
       createdAt
       updatedAt
     }
   }
 `;
-export const updateAmigos = /* GraphQL */ `
+export const updateAmigo = /* GraphQL */ `
   mutation UpdateAmigos(
     $input: UpdateAmigosInput!
     $condition: ModelAmigosConditionInput
   ) {
     updateAmigos(input: $input, condition: $condition) {
       id
-      name
-      age
-      description
-      location
-      job
+      nombre
+      edad
+      paradero
+      trabajo
+      descripcion
       createdAt
       updatedAt
     }
   }
 `;
-export const deleteAmigos = /* GraphQL */ `
+export const deleteAmigo = /* GraphQL */ `
   mutation DeleteAmigos(
     $input: DeleteAmigosInput!
     $condition: ModelAmigosConditionInput
   ) {
     deleteAmigos(input: $input, condition: $condition) {
       id
-      name
-      age
-      description
-      location
-      job
+      nombre
+      edad
+      paradero
+      trabajo
+      descripcion
       createdAt
       updatedAt
     }

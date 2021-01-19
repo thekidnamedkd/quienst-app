@@ -1,8 +1,8 @@
 type Amigos @model {
   id: ID!
-  name: String!
-  age: Int!
-  description: String!
-  location: String!
-  job: String!
+  nombre: String!
+  edad: Int!
+  paradero: String!
+  trabajo: String!
+  descripcion: String!
 }

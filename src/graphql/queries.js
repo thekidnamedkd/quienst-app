@@ -5,30 +5,30 @@ export const getAmigos = /* GraphQL */ `
   query GetAmigos($id: ID!) {
     getAmigos(id: $id) {
       id
-      name
-      age
-      description
-      location
-      job
+      nombre
+      edad
+      paradero
+      trabajo
+      descripcion
       createdAt
       updatedAt
     }
   }
 `;
-export const listAmigoss = /* GraphQL */ `
-  query ListAmigoss(
+export const listAmigos = /* GraphQL */ `
+  query ListAmigos(
     $filter: ModelAmigosFilterInput
     $limit: Int
     $nextToken: String
   ) {
-    listAmigoss(filter: $filter, limit: $limit, nextToken: $nextToken) {
+    listAmigos(filter: $filter, limit: $limit, nextToken: $nextToken) {
       items {
         id
-        name
-        age
-        description
-        location
-        job
+        nombre
+        edad
+        paradero
+        trabajo
+        descripcion
         createdAt
         updatedAt
       }

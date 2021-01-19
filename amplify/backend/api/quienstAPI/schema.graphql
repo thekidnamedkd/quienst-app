@@ -1,8 +1,9 @@
-type Amigos @model {
+type Amigo @model {
   id: ID!
   nombre: String!
   edad: Int!
   paradero: String!
   trabajo: String!
   descripcion: String!
+  image: String!
 }

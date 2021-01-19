@@ -1,15 +1,16 @@
 /* eslint-disable */
 // this is an auto generated file. This will be overwritten
 
-export const getAmigos = /* GraphQL */ `
-  query GetAmigos($id: ID!) {
-    getAmigos(id: $id) {
+export const getAmigo = /* GraphQL */ `
+  query GetAmigo($id: ID!) {
+    getAmigo(id: $id) {
       id
       nombre
       edad
       paradero
       trabajo
       descripcion
+      image
       createdAt
       updatedAt
     }
@@ -17,7 +18,7 @@ export const getAmigos = /* GraphQL */ `
 `;
 export const listAmigos = /* GraphQL */ `
   query ListAmigos(
-    $filter: ModelAmigosFilterInput
+    $filter: ModelAmigoFilterInput
     $limit: Int
     $nextToken: String
   ) {
@@ -29,6 +30,7 @@ export const listAmigos = /* GraphQL */ `
         paradero
         trabajo
         descripcion
+        image
         createdAt
         updatedAt
       }

@@ -2,51 +2,54 @@
 // this is an auto generated file. This will be overwritten
 
 export const createAmigo = /* GraphQL */ `
-  mutation CreateAmigos(
-    $input: CreateAmigosInput!
-    $condition: ModelAmigosConditionInput
+  mutation CreateAmigo(
+    $input: CreateAmigoInput!
+    $condition: ModelAmigoConditionInput
   ) {
-    createAmigos(input: $input, condition: $condition) {
+    createAmigo(input: $input, condition: $condition) {
       id
       nombre
       edad
       paradero
       trabajo
       descripcion
+      image
       createdAt
       updatedAt
     }
   }
 `;
 export const updateAmigo = /* GraphQL */ `
-  mutation UpdateAmigos(
-    $input: UpdateAmigosInput!
-    $condition: ModelAmigosConditionInput
+  mutation UpdateAmigo(
+    $input: UpdateAmigoInput!
+    $condition: ModelAmigoConditionInput
   ) {
-    updateAmigos(input: $input, condition: $condition) {
+    updateAmigo(input: $input, condition: $condition) {
       id
       nombre
       edad
       paradero
       trabajo
       descripcion
+      image
       createdAt
       updatedAt
     }
   }
 `;
 export const deleteAmigo = /* GraphQL */ `
-  mutation DeleteAmigos(
-    $input: DeleteAmigosInput!
-    $condition: ModelAmigosConditionInput
+  mutation DeleteAmigo(
+    $input: DeleteAmigoInput!
+    $condition: ModelAmigoConditionInput
   ) {
-    deleteAmigos(input: $input, condition: $condition) {
+    deleteAmigo(input: $input, condition: $condition) {
       id
       nombre
       edad
       paradero
       trabajo
       descripcion
+      image
       createdAt
       updatedAt
     }

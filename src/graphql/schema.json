@@ -15,7 +15,7 @@
         "name" : "Query",
         "description" : null,
         "fields" : [ {
-          "name" : "getAmigos",
+          "name" : "getAmigo",
           "description" : null,
           "args" : [ {
             "name" : "id",
@@ -33,20 +33,20 @@
           } ],
           "type" : {
             "kind" : "OBJECT",
-            "name" : "Amigos",
+            "name" : "Amigo",
             "ofType" : null
           },
           "isDeprecated" : false,
           "deprecationReason" : null
         }, {
-          "name" : "listAmigoss",
+          "name" : "listAmigos",
           "description" : null,
           "args" : [ {
             "name" : "filter",
             "description" : null,
             "type" : {
               "kind" : "INPUT_OBJECT",
-              "name" : "ModelAmigosFilterInput",
+              "name" : "ModelAmigoFilterInput",
               "ofType" : null
             },
             "defaultValue" : null
@@ -71,7 +71,7 @@
           } ],
           "type" : {
             "kind" : "OBJECT",
-            "name" : "ModelAmigosConnection",
+            "name" : "ModelAmigoConnection",
             "ofType" : null
           },
           "isDeprecated" : false,
@@ -83,7 +83,7 @@
         "possibleTypes" : null
       }, {
         "kind" : "OBJECT",
-        "name" : "Amigos",
+        "name" : "Amigo",
         "description" : null,
         "fields" : [ {
           "name" : "id",
@@ -176,6 +176,21 @@
           "isDeprecated" : false,
           "deprecationReason" : null
         }, {
+          "name" : "image",
+          "description" : null,
+          "args" : [ ],
+          "type" : {
+            "kind" : "NON_NULL",
+            "name" : null,
+            "ofType" : {
+              "kind" : "SCALAR",
+              "name" : "String",
+              "ofType" : null
+            }
+          },
+          "isDeprecated" : false,
+          "deprecationReason" : null
+        }, {
           "name" : "createdAt",
           "description" : null,
           "args" : [ ],
@@ -248,7 +263,7 @@
         "possibleTypes" : null
       }, {
         "kind" : "OBJECT",
-        "name" : "ModelAmigosConnection",
+        "name" : "ModelAmigoConnection",
         "description" : null,
         "fields" : [ {
           "name" : "items",
@@ -259,7 +274,7 @@
             "name" : null,
             "ofType" : {
               "kind" : "OBJECT",
-              "name" : "Amigos",
+              "name" : "Amigo",
               "ofType" : null
             }
           },
@@ -283,7 +298,7 @@
         "possibleTypes" : null
       }, {
         "kind" : "INPUT_OBJECT",
-        "name" : "ModelAmigosFilterInput",
+        "name" : "ModelAmigoFilterInput",
         "description" : null,
         "fields" : null,
         "inputFields" : [ {
@@ -341,6 +356,15 @@
           },
           "defaultValue" : null
         }, {
+          "name" : "image",
+          "description" : null,
+          "type" : {
+            "kind" : "INPUT_OBJECT",
+            "name" : "ModelStringInput",
+            "ofType" : null
+          },
+          "defaultValue" : null
+        }, {
           "name" : "and",
           "description" : null,
           "type" : {
@@ -348,7 +372,7 @@
             "name" : null,
             "ofType" : {
               "kind" : "INPUT_OBJECT",
-              "name" : "ModelAmigosFilterInput",
+              "name" : "ModelAmigoFilterInput",
               "ofType" : null
             }
           },
@@ -361,7 +385,7 @@
             "name" : null,
             "ofType" : {
               "kind" : "INPUT_OBJECT",
-              "name" : "ModelAmigosFilterInput",
+              "name" : "ModelAmigoFilterInput",
               "ofType" : null
             }
           },
@@ -371,7 +395,7 @@
           "description" : null,
           "type" : {
             "kind" : "INPUT_OBJECT",
-            "name" : "ModelAmigosFilterInput",
+            "name" : "ModelAmigoFilterInput",
             "ofType" : null
           },
           "defaultValue" : null
@@ -882,7 +906,7 @@
         "name" : "Mutation",
         "description" : null,
         "fields" : [ {
-          "name" : "createAmigos",
+          "name" : "createAmigo",
           "description" : null,
           "args" : [ {
             "name" : "input",
@@ -892,7 +916,7 @@
               "name" : null,
               "ofType" : {
                 "kind" : "INPUT_OBJECT",
-                "name" : "CreateAmigosInput",
+                "name" : "CreateAmigoInput",
                 "ofType" : null
               }
             },
@@ -902,20 +926,20 @@
             "description" : null,
             "type" : {
               "kind" : "INPUT_OBJECT",
-              "name" : "ModelAmigosConditionInput",
+              "name" : "ModelAmigoConditionInput",
               "ofType" : null
             },
             "defaultValue" : null
           } ],
           "type" : {
             "kind" : "OBJECT",
-            "name" : "Amigos",
+            "name" : "Amigo",
             "ofType" : null
           },
           "isDeprecated" : false,
           "deprecationReason" : null
         }, {
-          "name" : "updateAmigos",
+          "name" : "updateAmigo",
           "description" : null,
           "args" : [ {
             "name" : "input",
@@ -925,7 +949,7 @@
               "name" : null,
               "ofType" : {
                 "kind" : "INPUT_OBJECT",
-                "name" : "UpdateAmigosInput",
+                "name" : "UpdateAmigoInput",
                 "ofType" : null
               }
             },
@@ -935,20 +959,20 @@
             "description" : null,
             "type" : {
               "kind" : "INPUT_OBJECT",
-              "name" : "ModelAmigosConditionInput",
+              "name" : "ModelAmigoConditionInput",
               "ofType" : null
             },
             "defaultValue" : null
           } ],
           "type" : {
             "kind" : "OBJECT",
-            "name" : "Amigos",
+            "name" : "Amigo",
             "ofType" : null
           },
           "isDeprecated" : false,
           "deprecationReason" : null
         }, {
-          "name" : "deleteAmigos",
+          "name" : "deleteAmigo",
           "description" : null,
           "args" : [ {
             "name" : "input",
@@ -958,7 +982,7 @@
               "name" : null,
               "ofType" : {
                 "kind" : "INPUT_OBJECT",
-                "name" : "DeleteAmigosInput",
+                "name" : "DeleteAmigoInput",
                 "ofType" : null
               }
             },
@@ -968,14 +992,14 @@
             "description" : null,
             "type" : {
               "kind" : "INPUT_OBJECT",
-              "name" : "ModelAmigosConditionInput",
+              "name" : "ModelAmigoConditionInput",
               "ofType" : null
             },
             "defaultValue" : null
           } ],
           "type" : {
             "kind" : "OBJECT",
-            "name" : "Amigos",
+            "name" : "Amigo",
             "ofType" : null
           },
           "isDeprecated" : false,
@@ -987,7 +1011,7 @@
         "possibleTypes" : null
       }, {
         "kind" : "INPUT_OBJECT",
-        "name" : "CreateAmigosInput",
+        "name" : "CreateAmigoInput",
         "description" : null,
         "fields" : null,
         "inputFields" : [ {
@@ -1064,13 +1088,26 @@
             }
           },
           "defaultValue" : null
+        }, {
+          "name" : "image",
+          "description" : null,
+          "type" : {
+            "kind" : "NON_NULL",
+            "name" : null,
+            "ofType" : {
+              "kind" : "SCALAR",
+              "name" : "String",
+              "ofType" : null
+            }
+          },
+          "defaultValue" : null
         } ],
         "interfaces" : null,
         "enumValues" : null,
         "possibleTypes" : null
       }, {
         "kind" : "INPUT_OBJECT",
-        "name" : "ModelAmigosConditionInput",
+        "name" : "ModelAmigoConditionInput",
         "description" : null,
         "fields" : null,
         "inputFields" : [ {
@@ -1119,6 +1156,15 @@
           },
           "defaultValue" : null
         }, {
+          "name" : "image",
+          "description" : null,
+          "type" : {
+            "kind" : "INPUT_OBJECT",
+            "name" : "ModelStringInput",
+            "ofType" : null
+          },
+          "defaultValue" : null
+        }, {
           "name" : "and",
           "description" : null,
           "type" : {
@@ -1126,7 +1172,7 @@
             "name" : null,
             "ofType" : {
               "kind" : "INPUT_OBJECT",
-              "name" : "ModelAmigosConditionInput",
+              "name" : "ModelAmigoConditionInput",
               "ofType" : null
             }
           },
@@ -1139,7 +1185,7 @@
             "name" : null,
             "ofType" : {
               "kind" : "INPUT_OBJECT",
-              "name" : "ModelAmigosConditionInput",
+              "name" : "ModelAmigoConditionInput",
               "ofType" : null
             }
           },
@@ -1149,7 +1195,7 @@
           "description" : null,
           "type" : {
             "kind" : "INPUT_OBJECT",
-            "name" : "ModelAmigosConditionInput",
+            "name" : "ModelAmigoConditionInput",
             "ofType" : null
           },
           "defaultValue" : null
@@ -1159,7 +1205,7 @@
         "possibleTypes" : null
       }, {
         "kind" : "INPUT_OBJECT",
-        "name" : "UpdateAmigosInput",
+        "name" : "UpdateAmigoInput",
         "description" : null,
         "fields" : null,
         "inputFields" : [ {
@@ -1220,13 +1266,22 @@
             "ofType" : null
           },
           "defaultValue" : null
+        }, {
+          "name" : "image",
+          "description" : null,
+          "type" : {
+            "kind" : "SCALAR",
+            "name" : "String",
+            "ofType" : null
+          },
+          "defaultValue" : null
         } ],
         "interfaces" : null,
         "enumValues" : null,
         "possibleTypes" : null
       }, {
         "kind" : "INPUT_OBJECT",
-        "name" : "DeleteAmigosInput",
+        "name" : "DeleteAmigoInput",
         "description" : null,
         "fields" : null,
         "inputFields" : [ {
@@ -1247,34 +1302,34 @@
         "name" : "Subscription",
         "description" : null,
         "fields" : [ {
-          "name" : "onCreateAmigos",
+          "name" : "onCreateAmigo",
           "description" : null,
           "args" : [ ],
           "type" : {
             "kind" : "OBJECT",
-            "name" : "Amigos",
+            "name" : "Amigo",
             "ofType" : null
           },
           "isDeprecated" : false,
           "deprecationReason" : null
         }, {
-          "name" : "onUpdateAmigos",
+          "name" : "onUpdateAmigo",
           "description" : null,
           "args" : [ ],
           "type" : {
             "kind" : "OBJECT",
-            "name" : "Amigos",
+            "name" : "Amigo",
             "ofType" : null
           },
           "isDeprecated" : false,
           "deprecationReason" : null
         }, {
-          "name" : "onDeleteAmigos",
+          "name" : "onDeleteAmigo",
           "description" : null,
           "args" : [ ],
           "type" : {
             "kind" : "OBJECT",
-            "name" : "Amigos",
+            "name" : "Amigo",
             "ofType" : null
           },
           "isDeprecated" : false,
